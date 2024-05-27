@@ -24,7 +24,13 @@ dependency management.
     ```
     docker-compose up
     ```
-4. Run the application:
+   In case that we run the spring app in a container use
+
+4. ```
+    docker-compose up --build
+   ```
+
+4. Run the application (in case that you remove contactapi from the docker-compose.yml
     ```
     mvn spring-boot:run
     ```
