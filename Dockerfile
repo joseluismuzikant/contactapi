@@ -11,7 +11,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Package the application (skip tests if needed)
-RUN mvn clean package -DskipTests
+RUN mvn clean package
 
 # Use the official OpenJDK 22 image as the base image for running the application
 FROM openjdk:22-jdk-slim
